@@ -160,7 +160,7 @@ header nav ul li a:hover {
 /* PROJECTS */
 
 .projects {
-  margin-top: 127px;
+margin: 127px 0;
 }
 
 .title {
@@ -221,3 +221,21 @@ header nav ul li a:hover {
   align-items: center;
   justify-content: center;
 }
+
+/* FOOTER */
+    footer{
+        background: #212121;
+        padding: 20px 0;
+        margin-top: 127px;
+        text-align: center;
+    }
+
+    footer p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    footer p span{
+        color: #00DF5E;
+        font-weight: 700;
+    }
