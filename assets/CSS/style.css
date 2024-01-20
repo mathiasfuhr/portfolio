@@ -67,6 +67,24 @@ header nav ul li a:hover {
   font-weight: 700;
 }
 
+.hero .leftside h1 .rotateAndBack{
+    display: inline-block;
+    font-size: 36px;
+    animation: rotateContinuous 3s linear infinite;
+}
+
+@keyframes rotateContinuous {
+    0%, 100% {
+        transform: rotate(0deg); /* Inicia e termina sem rotação */
+    }
+    50% {
+        transform: rotate(45deg); /* Gira 45 graus para a direita */
+    }
+    50.01% {
+        transform: rotate(44.99deg); /* Evita o "pulo" ao retornar ao início */
+    }
+}
+
 .hero .leftside p {
   color: #828282;
   font-weight: 500;
@@ -93,6 +111,16 @@ header nav ul li a:hover {
 
 .hero .rightside {
   flex: 1;
+  animation: moveUpDown 4s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0); /* Posição inicial e final (sem movimento) */
+    }
+    50% {
+        transform: translateY(50px); /* Metade do caminho para baixo */
+    }
 }
 
 .hero .rightside img {
