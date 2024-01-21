@@ -104,23 +104,33 @@ header nav ul li a:hover {
   margin: 35px 0;
 }
 
-.hero .leftside .button {
-  display: inline-block;
-  padding: 12px 18px;
-  border: 1px solid #333;
-  background: #171717;
-  font-size: 14px;
-  font-weight: 500;
+.button {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #171717;
   color: #f9f9f9;
-  transition: 0.3s;
-  border: 1px solid #00df5e;
-  margin-right: 15px;
+  border: 1px solid #00DF5E;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.hero .leftside .button:hover {
-  background: #00df5e;
+.button:hover {
+  background-color: #00df5e;
+  color: #171717;
 }
+
+.icon {
+  margin-right: 10px; /* Ajuste o espaçamento entre o ícone e o texto conforme necessário */
+}
+
+/* Estilos para os ícones */
+.icon i {
+  font-size: 18px;
+}
+
 
 .hero .rightside {
   flex: 1;
