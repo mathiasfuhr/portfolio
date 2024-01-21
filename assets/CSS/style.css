@@ -161,7 +161,7 @@ header nav ul li a:hover {
   margin: 0 auto;
   color: #828282;
   font-weight: 400;
-  line-height: 117.778%;
+  line-height: 30px;
 }
 
 /* CONTACTS*/
@@ -217,6 +217,11 @@ margin: 127px 0;
   border: 1px solid #333;
   background: #212121;
   padding: 20px;
+  transition: 0.3s;
+}
+
+.projects .card:hover{
+  transform: scale(1.2);
 }
 
 .projects-cards {
@@ -261,6 +266,11 @@ margin: 127px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
+}
+
+.skills-item .item:hover{
+  background-color: #171717;
 }
 
 /* FOOTER */
@@ -279,4 +289,15 @@ margin: 127px 0;
     footer p span{
         color: #00DF5E;
         font-weight: 700;
+    }
+
+    .section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
