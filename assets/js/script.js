@@ -19,3 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", checkVisibility);
     document.addEventListener("DOMContentLoaded", checkVisibility);
   });
+
+
+
+
+const trilho = document.getElementById('trilho');
+const body = document.querySelector('body');
+trilho.addEventListener('click', ()=>{
+  trilho.classList.toggle('dark');
+  body.classList.toggle('dark');
+})
