@@ -15,7 +15,14 @@ const Header: React.FC = () => {
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
+    localStorage.setItem('theme', newTheme); // Salva o tema no localStorage
   };
+
+  useEffect(() => {
+    // Carrega o tema do localStorage e aplica ao document
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+  }, [setTheme]);
 
   useEffect(() => {
     if (theme === 'dark') {
