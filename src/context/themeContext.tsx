@@ -1,5 +1,4 @@
-// src/themeContext.tsx
-import React, { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 type ThemeContextType = {
   theme: string;
